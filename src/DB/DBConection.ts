@@ -1,3 +1,6 @@
+import { PagoEntity } from './../Entity/Pago.Entity';
+import { ConsumoEntity } from './../Entity/Consumo.Entity';
+import { ClienteEntity } from './../Entity/Cliente.Entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 export const Connection = TypeOrmModule.forRoot({
@@ -15,6 +18,6 @@ export const Connection = TypeOrmModule.forRoot({
     username: 'root',
     password: '',
     database: 'test',
-    entities: [],
+    entities: [ClienteEntity,ConsumoEntity,PagoEntity],
     synchronize: true,
   })
