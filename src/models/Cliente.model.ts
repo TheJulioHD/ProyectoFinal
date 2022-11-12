@@ -3,5 +3,6 @@ export interface ClienteModel{
     nombre:string;
     apellido:string;
     correo: string;
+    telefono: string;
     domicilio: string;
 }

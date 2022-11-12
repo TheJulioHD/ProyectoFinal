@@ -17,7 +17,7 @@ export const Connection = TypeOrmModule.forRoot({
     port: 3306,
     username: 'root',
     password: '',
-    database: 'test',
+    database: 'proyecto',
     entities: [ClienteEntity,ConsumoEntity,PagoEntity],
     synchronize: true,
   })
