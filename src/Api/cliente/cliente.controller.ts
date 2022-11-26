@@ -9,7 +9,7 @@ export class ClienteController {
     @Post()
     Create(@Body()params:ClienteModel){
         try {
-            this.clienteService.create(params).then((res) =>console.log(res))
+            this.clienteService.create(params)
         } catch (error) {
             console.log("error =>"+error)
         }
@@ -17,7 +17,7 @@ export class ClienteController {
     @Post("/create")
     Create2(@Body()params:ClienteModel){
         try {
-            this.clienteService.create(params).then((res) =>console.log(res))
+            this.clienteService.create(params)
         } catch (error) {
             console.log("error =>"+error)
         }

@@ -18,4 +18,12 @@ export class ConsumoController {
     Getall(){
         return this.consumoservice.getall().catch((err) => console.log(err))
     }
+    @Get("/all")
+    Getall2(){
+        return this.consumoservice.getallc().catch((err) => console.log(err))
+    }
+    @Get("/min")
+    Getmin(){
+        return this.consumoservice.getmin().catch((err) => console.log(err))
+    }
 }
